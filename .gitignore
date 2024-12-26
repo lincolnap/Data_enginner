@@ -1,0 +1,7 @@
+kafka/config
+kafka/kafka
+kafka/data
+kafka/secrets.py
+.env
+Spark/spark_kafka_checkpoint
+PG/postgres_secrets.env
