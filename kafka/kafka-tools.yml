@@ -1,16 +1,4 @@
 services:
-  notebook-spark:
-    image: jupyter/pyspark-notebook
-    container_name: notebook-spark
-    networks:
-      - airflow-kafka
-    ports:
-      - "10000:8888"
-      - "4040:4040"
-    volumes:
-      - ./Spark:/home/jovyan/work
-    command: start-notebook.sh
-
   kafka:
     image: 'bitnami/kafka:latest'
     expose:
